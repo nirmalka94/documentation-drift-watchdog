@@ -1,0 +1,28 @@
+# Documentation Drift Watchdog Agent Configuration
+# GitHub authentication
+GITHUB_TOKEN: "YOUR_KEY_HERE"
+GITHUB_USER_OR_ORG: "nirmalka94"
+DEFAULT_BRANCH: "main"
+
+# Execution
+EXECUTION_MODE: "all"  # all, single, subset, incremental
+REPOSITORY: ""
+REPOSITORIES: ["Intelligent_Agriculture_Crop-Collection_Robot"]
+FORCE_RESCAN: false
+
+
+# LLM
+LLM_PROVIDER: "ollama"  # openai or ollama
+OPENAI_MODEL: "gpt-3.5-turbo"
+OLLAMA_MODEL: "llama2"
+OPENAI_API_KEY: "YOUR_KEY_HERE"
+
+# Web API
+WEBAPI_HOST: "0.0.0.0"
+WEBAPI_PORT: 8000
+
+# Memory
+MEMORY_DB_PATH: "/home/nirmalka/Hackathon/documentation_drift_watchdog/memory/drift_memory.sqlite"
+
+# Schedule (optional)
+SCHEDULE_CRON: ""
